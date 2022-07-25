@@ -93,30 +93,30 @@ function a11yProps(index) {
         sx={{ borderRight: 1, borderColor: 'divider' }}
       >
         <Tab label="Home" {...a11yProps(0)} />
-        <Tab label="Usuarios" {...a11yProps(1)} />
-        <Tab label="Productos" {...a11yProps(2)} />
-        <Tab label="Lista de productos" {...a11yProps(3)} />
-        <Tab label="Crear Ordenes " {...a11yProps(4)} />
-        <Tab label="Ordenes de compra" {...a11yProps(5)} />
+        {/* <Tab label="Usuarios" {...a11yProps(1)} /> */}
+        <Tab label="Productos" {...a11yProps(1)} />
+        <Tab label="Lista de productos" {...a11yProps(2)} />
+        <Tab label="Crear Ordenes " {...a11yProps(3)} />
+        <Tab label="Ordenes de compra" {...a11yProps(4)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         Welcom to Karlo
       </TabPanel>
+      {/* <TabPanel value={value} index={1}>
+      </TabPanel> */}
       <TabPanel value={value} index={1}>
-      </TabPanel>
-      <TabPanel value={value} index={2}>
         CRUD Productos
         <FormProductos/>
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={2}>
         Lista de productos
       <TableProductos/>
       </TabPanel>
-      <TabPanel value={value} index={4}>
+      <TabPanel value={value} index={3}>
         Crear Ordenes de compra
         <FormOrdenes/>
       </TabPanel>
-      <TabPanel value={value} index={5}>
+      <TabPanel value={value} index={4}>
         Lista de ordenes de compra
         <TableOrdenes/>
       </TabPanel>
